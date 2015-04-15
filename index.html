@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Budreski - Intro to Programming</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!-- CodePen enters doctype and head automatically along with html and body tags, without this the W3C Validator will come back with a ton of errors -->
+
+  <!-- Code below begins the content with a section title, followed by the header content and then my notes, the style will be applied wit the div class 'summary -content'  -->
+
+    <h1>Important Concepts</h1>
+    <div class="Header">
+      <b> BASICS OF WEB AND HTML NOTES: <a href="http://au.linkedin.com/in/jbudreski/en"> BUDRESKI</a></b><br>
+    </div>
+    <div class="summary-content">
+      <b>Intro:</b> The web is made up of HTML, URLS, HTTP, Web apps<br>
+      - Browsers send requests via  the internet and http to servers which host the files and send them back to the browser for the user<br>
+
+      - Just about any file can be found on the web<br>
+
+    </div>
+    <div class="summary-content">
+      HTML = <em>Hypertext markup lanaguage</em><br>
+      - composed of: text content, markup, ref. to other docs<br>
+      - plain text = plain text<br>
+      - to change the text you need markup<br>
+      <br>
+      Markup:<br> <!-- Super important here to note that in order to put < in the code but not actually do anything you put in &lt; and &gt; -->
+      Tags - tags have an opening tag and a closing tag<br>
+      <em>ex:</em> &lt;name&gt; contents &lt; /name &gt; and the whole string is an <em>element</em><br>
+      Bold tag = &lt;b&gt; content &lt;/b&gt;<br>
+      Italics = &lt;em&gt; content &lt;/em&gt;<br>
+      Note: If you don't close out a tag then the rest of the content on the page will be with that tag<br>
+
+    </div>
+
+    <div class="summary-content">
+      <b>Attributes in HTML:</b><br>
+      Will look like: <em>&lt; Tag ATTR="value"&gt;contents&lt;/tag&gt;</em><br>
+      <br>
+
+      - <b>Anchor tag</b> - &lt;a&gt; &lt;/a&gt;<br>
+      - Used for making links on a webpage
+      <em>example: &lt;a href="www.kdhgfihd.com"&gt;HTML&lt;/a&gt;</em><br>
+      <br>
+
+      -<b>Image tag</b> Image tag - &gt;img&lt;<br> 
+      - Considered a <em>void tag</em>, meaning you don't have to close it
+      <em>example: &lt;img src="imgage url" alt="text"&gt;</em><br>
+      <br>
+
+      <b>Note: You need to have alt=text in the case the image fails to load</b><br>
+
+      - <b>Break tag</b> - &lt;br&gt; - also a void tag       <br>
+
+      - Makes text move down to the next line<br>
+      - Only need to put it once right after where you want the next line to begin<br>
+      <br>
+      -<b>Paragraph tag</b> - &lt;p&gt; &lt;/p&gt;<br>
+      - Keeps content in a specified box<br>
+
+      <b>Note: a &lt;br&gt; tag is an inline and a &lt;p&gt; tag makes a box which you can set height and width of the box</b><br>
+    </div>
+    <div class="summary-content">
+      <b>Elements:</b><br>
+      - Elements contain their content. You can attach styles to them via CSS<br>
+
+      &lt;span&gt; &lt;/span&gt; are inline<br>
+      &lt;div&gt; &lt;/div&gt; are block<br>
+    </div>
+    <div class="summary-content">
+      <b>HTML DOCUMENTS: What it looks like</b><br>
+
+      Doctype - HTML <br>
+
+      Opening and closging tags for the whole document  &lt;html&gt; &lt;/html&gt;<br>
+
+      then <br>
+      &lt;head&gt; which contains meta data , JS and CSS<br>
+      then<br>
+      &lt;title&gt; - has the title<br>
+      then<br>
+      close the head tag &lt;/head&gt;<br>
+      then<br>
+      &lt;body&gt; with the content and closed &lt;/body&gt;<br>
+    </div>
+    <h1>The Basics</h1>
+    <!-- Code for Lesson 2 begins here with the same structure and style -->
+    <div class="Header">
+      <b>LESSON 2 - Webpages, Docs and Structure</b><br>
+    </div>
+    <div class="summary-content">
+      <em>Summary</em><br>
+      - HTML = structure <br>
+      - CSS = style<br>
+      - JS = interactive<br>
+      DOM = Document Object Model. A.K.A Structure Tree. The browser takes your tags and forms them into elements. DOM is a standard convention for representing those elements that the browser uses to display the page.   <br>
+      - Everything on a web page is a box<br>
+      - Think as granularly as possible when it comes to webpage design (boxception)<br>
+      <em>Big Ideas</em><br>
+      - Your code should be as efficient as possible. Look to mitigate repition as much as possible through using the same classes and styles for elements that you want to look the same. This saves time, effort, money and is easier for people looking at your code to understand. <br>
+      - The code will appear to be well organized and succicent and then you can drill down into elements to arrive at the plain text. <br>
+      - All the &lt;div&gt;s should be thought of as boxes. Before you start to fill in the content you should map out the boxes via the &lt;div&gt;s
+    </div>
+    <!-- Code for lesson 3 begins here with the same structure and style-->
+    <div class="Header">
+      <b>LESSON 3 - Applying Style</b>
+    </div>
+    <div class="summary-content">
+      <br>
+      - Always think of code in the most efficent way possible
+      <br>
+      - In order to reduce repition we use the concept of inheritance. <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets#Inheritance"> This article </a> is very helpful for understanding this concept
+      <br>
+      - In order to apply style we use CSS
+      <br>
+      - Which is applied by using dot class such as .description then the attribute and value. <em>example:</em> .Header {color:red}
+      <br>
+      - For all the attributes <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"> this article is essential </a>
+      - You can apply CSS in either the Head part of your HTML or you can link the CSS file within the HTML Head which is generally best practice. 
+      <br>
+      <b>Boxes</b>
+      <br>
+      - Always set box border for every element
+      <br>
+      <b>Bit of a Recap</b>
+      <br>
+      - Get structure right first
+      <br>
+      - Then tags
+      <br>
+      - Then boxes
+    </div>
+
+</body>
+
+</html>
